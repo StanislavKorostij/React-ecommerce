@@ -193,7 +193,11 @@ const ProductScreen = ({ history, match }) => {
                     </Form>
                   ) : (
                     <Message>
-                      Please <Link to='/login'>sign in</Link> to write a review{' '}
+                      Please{' '}
+                      <Link to='/login' style={{ fontWeight: 'bold' }}>
+                        sign in
+                      </Link>{' '}
+                      to write a review{' '}
                     </Message>
                   )}
                 </ListGroup.Item>
